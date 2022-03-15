@@ -1,0 +1,102 @@
+
+SQL> create table apsrtc(serviceno int primary key,servicetype varchar2(10),startlocation varchar2(20),destination varchar2(20),kms number(10),ticket_price number(10));
+
+Table created.
+
+SQL> insert into apsrtc values(1,'luxury','rjy','kkd',500,550);
+
+1 row created.
+
+SQL> insert into apsrtc values(2,'luxury','vskp','hyd',700,750);
+
+1 row created.
+
+SQL> insert into apsrtc values(3,'passanger','hyd','vskp',700,750);
+
+1 row created.
+
+SQL> insert into apsrtc values(4,'express','rjy','vskp',400,450);
+
+1 row created.
+
+SQL> insert into apsrtc values(5,'express','vskp','rjy',400,450);
+
+1 row created.
+
+SQL> insert into apsrtc values(6,'passanger','kkd','rjy',500,550);
+
+1 row created.
+
+SQL> insert into apsrtc values(7,'passanger','kkd','pal',250,500);
+
+1 row created.
+
+SQL> insert into apsrtc values(8,'passanger','pal','kkd',250,500);
+
+1 row created.
+
+SQL> insert into apsrtc values(9,'express','srpm','kkd',100,150);
+
+1 row created.
+
+SQL> insert into apsrtc values(10,'luxury','kkd','srpm',100,200);
+
+1 row created.
+
+SQL> select * from apsrtc;
+
+ SERVICENO SERVICETYP STARTLOCATION        DESTINATION                 KMS
+---------- ---------- -------------------- -------------------- ----------
+TICKET_PRICE
+------------
+         1 luxury     rjy                  kkd                         500
+         550
+
+         2 luxury     vskp                 hyd                         700
+         750
+
+         3 passanger  hyd                  vskp                        700
+         750
+
+
+ SERVICENO SERVICETYP STARTLOCATION        DESTINATION                 KMS
+---------- ---------- -------------------- -------------------- ----------
+TICKET_PRICE
+------------
+         4 express    rjy                  vskp                        400
+         450
+
+         5 express    vskp                 rjy                         400
+         450
+
+         6 passanger  kkd                  rjy                         500
+         550
+
+
+ SERVICENO SERVICETYP STARTLOCATION        DESTINATION                 KMS
+---------- ---------- -------------------- -------------------- ----------
+TICKET_PRICE
+------------
+         7 passanger  kkd                  pal                         250
+         500
+
+         8 passanger  pal                  kkd                         250
+         500
+
+         9 express    srpm                 kkd                         100
+         150
+
+
+ SERVICENO SERVICETYP STARTLOCATION        DESTINATION                 KMS
+---------- ---------- -------------------- -------------------- ----------
+TICKET_PRICE
+------------
+        10 luxury     kkd                  srpm                        100
+         200
+
+
+10 rows selected.
+
+SQL>
+
+
